@@ -9,7 +9,7 @@ log using "Log files\Data Preparation\Cancer_deaths_GBD_002", replace
 **  program:		Cancer_GBD_002.do
 **  project:      	Caribbean mortality trends 
 **  author:       	Rocke&Hambleton \ 10-AUG-2016 \ revised 08-OCT-2018
-**  task:          	Prepare WHO mortality dataset
+**  task:          	Prepare GBD mortality dataset
  
 ** DO-FILE SET UP COMMANDS
 version 13
