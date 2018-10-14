@@ -35,7 +35,7 @@ use "D:\Statistical Data Anlaysis\2018\Cancer Mortality Trends\Data\icd10p1.dta"
 merge 1:1 country- im_deaths4 using "D:\Statistical Data Anlaysis\2018\Cancer Mortality Trends\Data\icd10p2.dta"
 save "D:\Statistical Data Anlaysis\2018\Cancer Mortality Trends\Data\icd10combine.dta"
 
-use "G:\Statistical Data Anlaysis\2018\Cancer Mortality Trends\Data\icd10combine.dta", clear
+use "G:\Statistical Data Anlaysis\2018\Cancer Mortality Trends\Data\icd10combine.dta", clear 
 
 
 ** Original WHO format --> sex
