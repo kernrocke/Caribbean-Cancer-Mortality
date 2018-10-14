@@ -8,7 +8,7 @@ log using "Log files\Data Preparation\cancer_un_001", replace
 **  program:		cancer_un_001.do
 **  project:      	Caribbean Cancer mortality trends 
 **  author:       	Hambleton \ 11-NOV-2017\revised December 15,2016
-**  task:          	Prepare UN population dataset
+**  task:          	Prepare UN population dataset 
  
 ** DO-FILE SET UP COMMANDS. 
 version 13
