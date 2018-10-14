@@ -240,5 +240,5 @@ label define cid
 ** AGE-ADJUSTED
 ** QUALITY-ADJUSTED 
 ** Save the final combined deaths + population dataset
-save "G:\Statistical Data Anlaysis\2018\Cancer Mortality Trends\Data\carib_cancer_deaths_GBD_002", replace
+save "G:\Statistical Data Anlaysis\2018\Cancer Mortality Trends\Data\carib_cancer_deaths_GBD_002", replace 
 
