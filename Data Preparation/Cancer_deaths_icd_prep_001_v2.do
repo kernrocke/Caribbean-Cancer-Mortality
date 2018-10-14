@@ -2,7 +2,7 @@
 
 ** CLOSE ANY OPEN LOG FILE AND OPEN A NEW LOG FILE
 capture log close
-cd "G:\Statistical Data Anlaysis\2018\Cancer Mortality Trends"
+cd "G:\Statistical Data Anlaysis\2018\Cancer Mortality Trends" 
 log using "Log files\Data Preparation\Cancer_deaths_icd_prep", replace
 
 **  GENERAL DO-FILE COMMENTS
