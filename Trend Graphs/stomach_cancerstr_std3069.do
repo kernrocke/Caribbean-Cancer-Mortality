@@ -191,4 +191,4 @@ sort year
 		);
 #delimit cr
 
-graph save Graph "G:\Statistical Data Anlaysis\2018\Cancer Mortality Trends\Graphs\stomach_trend_str_3069
+graph save Graph "G:\Statistical Data Anlaysis\2018\Cancer Mortality Trends\Graphs\stomach_trend_str_3069",replace
