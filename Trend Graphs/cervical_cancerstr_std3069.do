@@ -45,18 +45,12 @@ drop if age10 == 1
 
 keep if sex== 1
 
-**distrate deaths pop2 using "world_pop2.dta" if cid ==2010 | cid ==2030 | cid ==2040 | cid== 2045 | cid==2230 | cid==2260 | cid== 2400 | cid==2420 | cid==2430 | cid==2440,stand(age5) popstand(pop_std) by(year sex) mult(100000) format(%8.2f) saving(agestd2_30.dta, replace) 
-
 distrate deaths pop2 using "G:\Statistical Data Anlaysis\2018\Cancer Mortality Trends\Data\Population Numbers\world_pop3.dta" ,stand(age5) popstand(pop_std) by(year cid) mult(100000) format(%8.2f) saving(cervical_agestd3i_3069.dta, replace) 
 
 use "cervical_agestd3i_3069.dta", clear
 
+lowess rateadj year, gen(lowi)nog
 
-foreach x in 2040  {
-
-lowess rateadj year if cid == `x', gen(lowi`x')nog
-	
-}
 poisson rateadj, irr
 	
 predict predi, ir
@@ -112,7 +106,7 @@ sort year
 		region(fcolor(gs16) lw(vthin) margin(l=2 r=2 t=2 b=2)) order(2 3 4 5)
 		lab(2 "Directly Age-adjusted") 
 		lab(3 "Poisson model 1")
-		lab(4 "Poisson model 2")
+		lab(4 "Fractional Poloynomial model")
 		///lab(5 "Poisson model 2")
 		///lab(6 "Smooth rate")
 		);
